@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title>Person Details</title>
+	</head>
+	<body>
+		<div>
+			Hi, <span id="fName"></span> <span id="lName"></span><br/>
+			Your Email: <span id="email"></span><br/>
+			Your Phone No.: <span id="phNo"></span></div>
+	</body>
+	<script type="text/javascript">
+		function personDetails(fName, lName, email, phNo) {
+			this.fName = fName;
+			this.lName = lName;
+			this.email = email;
+			this.phNo = phNo;
+		}
+
+		var num1 = 5;
+		var num2 = 10;
+
+		var person = new personDetails('OM', 'PRAKASH', 'om@orbyo.com', 8884844245);
+		
+		document.getElementById('fName').innerHTML = person.fName;
+		document.getElementById('lName').innerHTML = person.lName;
+		document.getElementById('email').innerHTML = person.email;
+		document.getElementById('phNo').innerHTML = person.phNo;
+	</script>
+</html>
